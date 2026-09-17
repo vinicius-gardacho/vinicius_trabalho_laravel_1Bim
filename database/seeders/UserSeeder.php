@@ -23,5 +23,9 @@ class UserSeeder extends Seeder
                 'role' => 'user',
             ],
         ];
+
+        foreach ($users as $user) {
+            User::create($user);
+        }
     }
 }
